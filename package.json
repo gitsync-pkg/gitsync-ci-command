@@ -1,6 +1,6 @@
 {
   "name": "@gitsync/ci-command",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Sync the pushed commits and push to the relative repositories in Continuous Integration service.",
   "keywords": [
     "gitsync",

@@ -34,6 +34,11 @@ async function testService(before: Function, after: Function) {
 }
 
 describe('ci-commit command', () => {
+  beforeAll(() => {
+    delete process.env.TRAVIS_COMMIT_RANGE;
+    delete process.env.GITHUB_EVENT_PATH;
+  });
+
   test('run commit in Travis CI', async () => {
     await testService((from: string, to: string) => {
       process.env.TRAVIS_COMMIT_RANGE = from + '...' + to;

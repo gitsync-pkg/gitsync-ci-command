@@ -1,6 +1,6 @@
 {
   "name": "@gitsync/ci-command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sync the pushed commits and push to the relative repositories in Continuous Integration service.",
   "keywords": [
     "gitsync",
@@ -31,9 +31,9 @@
     "url": "https://github.com/twinh/gitsync/issues"
   },
   "dependencies": {
-    "@gitsync/commit-command": "^0.6.0",
-    "@gitsync/push-command": "^0.5.4",
-    "@gitsync/sync": "^0.6.0"
+    "@gitsync/commit-command": "^0.6.1",
+    "@gitsync/push-command": "^0.5.5",
+    "@gitsync/sync": "^0.6.1"
   },
   "devDependencies": {
     "@gitsync/test": "^0.5.0",

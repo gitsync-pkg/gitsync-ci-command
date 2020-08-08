@@ -1,3 +1,15 @@
+## [1.0.2](https://github.com/gitsync-pkg/gitsync-ci-command/compare/v1.0.1...v1.0.2) (2020-08-08)
+
+
+
+
+
+### Dependencies
+
+* **@gitsync/commit-command:** upgrade from 0.6.1 to 0.6.2
+* **@gitsync/push-command:** upgrade from 0.5.5 to 0.5.6
+* **@gitsync/sync:** upgrade from 0.6.1 to 0.6.2
+
 ## [1.0.1](https://github.com/gitsync-pkg/gitsync-ci-command/compare/v1.0.0...v1.0.1) (2020-08-06)
 
 

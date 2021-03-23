@@ -46,7 +46,12 @@ command.handler = async () => {
 async function getPrev() {
   // GitHub Actions
   if (process.env.GITHUB_EVENT_PATH) {
-    return JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8')).before;
+    let hash = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8')).before;
+    if (hash === '0'.repeat(40)) {
+      // When pushing a new branch, GitHub will return an invalid hash, so we replace it with the root hash
+      hash = '4b825dc642cb6eb9a060e54bf8d69288fbee4904';
+    }
+    return hash;
   }
 
   // Travis
